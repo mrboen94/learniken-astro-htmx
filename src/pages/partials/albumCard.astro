@@ -3,7 +3,7 @@ import albums from "../components/albums";
 import AlbumCard from "../components/AlbumCard.astro";
 export const partial = true
 
-const albumId = +(Astro.url.searchParams.get('albumId'))
+const albumId = +(Astro.url.searchParams.get('albumId') || 1)
 ---
 
 <AlbumCard album={albums[albumId - 1]} />

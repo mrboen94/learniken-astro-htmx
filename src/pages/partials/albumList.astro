@@ -1,9 +1,0 @@
----
-import albums from "../components/albums";
-import AlbumList from "../components/AlbumList.astro"
-export const partial = true
-
-const albumId = +(Astro.url.searchParams.get('albumId') || 1)
----
-
-<AlbumList album={albums.slice((albumId -1) * 10, albumId * 10)} />

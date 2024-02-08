@@ -2,8 +2,6 @@
 import users from '../../components/users';
 import UserList from '../../components/UserList.astro';
 
-export const partial = true;
-
 const page = +(Astro.url.searchParams.get('page') || 1);
 ---
 <div class="italic mb-5 text-white">
